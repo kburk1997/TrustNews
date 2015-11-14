@@ -1,6 +1,7 @@
 
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
-  //Console log the current url for test purposes
-  console.log(document.URL);
+  //Store the document url and display for test purposes
+  var url = document.URL;
+  console.log(url);
 });
