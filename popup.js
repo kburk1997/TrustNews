@@ -66,6 +66,7 @@ function renderReliability(statusText) {
 function renderRating(statusText) {
  document.getElementById('rating').textContent = statusText;
 }
+var status = "less";
 function toggleText()
 {
     var text="Here is some text that I want added to the HTML file";
