@@ -66,6 +66,20 @@ function renderReliability(statusText) {
 function renderRating(statusText) {
  document.getElementById('rating').textContent = statusText;
 }
+function toggleText()
+{
+    var text="Here is some text that I want added to the HTML file";
+
+    if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "See Less";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "See More";
+        status = "less"
+    }
+}
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -88,20 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
      //renderStatus(host_name);
   });
   
-  function toggleText()
-{
-    var text="Here is some text that I want added to the HTML file";
-
-    if (status == "less") {
-        document.getElementById("textArea").innerHTML=text;
-        document.getElementById("toggleButton").innerText = "See Less";
-        status = "more";
-    } else if (status == "more") {
-        document.getElementById("textArea").innerHTML = "";
-        document.getElementById("toggleButton").innerText = "See More";
-        status = "less"
-    }
-}
 
   //Load data
 	// Call to function with anonymous callback
