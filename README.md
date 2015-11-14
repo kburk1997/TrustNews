@@ -3,7 +3,7 @@ A Chrome Extension that determines if a news source is trustworthy.
 Created at HackRPI 2015 by: Kathleen Burkhardt and Alex Lin
 
 ## How do we determine if a news source is trustworthy?
-Ask the following questions:
+We ask the following questions:
 * How long has it existed?
 * Has it won major awards or the favor of journalistic bodies like Poynter?
 * What are the potential conflicts with its corporate parent?
