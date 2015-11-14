@@ -55,6 +55,17 @@ function getCurrentTabUrl(callback) {
 function renderStatus(statusText) {
  document.getElementById('status').textContent = statusText;
 }
+
+function renderSatire(statusText) {
+ document.getElementById('satire').textContent = statusText;
+}
+
+function renderReliability(statusText) {
+ document.getElementById('reliability').textContent = statusText;
+}
+function renderRating(statusText) {
+ document.getElementById('rating').textContent = statusText;
+}
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -74,9 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		parser.host;     // => "example.com:3000"
 
 		host_name = parser.hostname;
-     renderStatus(host_name);
+     //renderStatus(host_name);
   });
-  
 
   //Load data
 	// Call to function with anonymous callback
@@ -85,12 +95,32 @@ document.addEventListener('DOMContentLoaded', function() {
 		jsonresponse = JSON.parse(response);
 
 		// Assuming json data is wrapped in square brackets as Drew suggests
+		//Create a variable to see if match found
+		var matchFound = false;
+		//Create a variable
+
 		//Loop through the entire json (test)
-		for(i = 0; i<31; ++i){
+		for(i = 0; i<69; ++i){
 			//Check if we are on a news site
 			if(host_name == jsonresponse[i].url_){
 				renderStatus("You are on " + jsonresponse[i].content);
+				matchFound = true;
+				//Check if we are on a satire site
+				if(jsonresponse[i].satire){
+					renderSatire(jsonresponse[i].content+ " is a satire news source.");
+				}
+
+				//Render rating if we are not
+				else{
+					renderReliability(jsonresponse[i].content+" has a reliability rating of: ");
+					renderRating(jsonresponse[i].reliability + " out of 10" );
+				}
 			}
+		}
+
+		//Check if match still not found
+		if(!matchFound){
+			renderStatus("We cannot determine if you are on a news site");
 		}
 
 	});
