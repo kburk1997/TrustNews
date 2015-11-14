@@ -58,10 +58,20 @@ function renderStatus(statusText) {
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
 	//get url of current tab
-  /*getCurrentTabUrl(function(url) {
-     // Display URL
-     renderStatus(url);
-  });*/
+  getCurrentTabUrl(function(url) {
+     // Parse and display URL
+   	 var parser = document.createElement('a');
+		parser.href = url;
+		 
+		parser.protocol; // => "http:"
+		parser.hostname; // => "example.com"
+		parser.port;     // => "3000"
+		parser.pathname; // => "/pathname/"
+		parser.search;   // => "?search=test"
+		parser.hash;     // => "#hash"
+		parser.host;     // => "example.com:3000"
+     renderStatus(parser.hostname);
+  });
 
   //Load data
 	// Call to function with anonymous callback
@@ -71,11 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		jsonresponse = JSON.parse(response);
 
 		// Assuming json data is wrapped in square brackets as Drew suggests
-		//Loop through the entire json
+		/*//Loop through the entire json (test)
 		for(i = 0; i<31; ++i){
 			alert(jsonresponse[i].data.content)
-		}
-		renderStatus(jsonresponse[0].data.content);
+		}*/
 
 	});
 });
