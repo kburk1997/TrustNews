@@ -57,6 +57,8 @@ function renderStatus(statusText) {
 }
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
+
+	var host_name;
 	//get url of current tab
   getCurrentTabUrl(function(url) {
      // Parse and display URL
@@ -70,23 +72,25 @@ document.addEventListener('DOMContentLoaded', function() {
 		parser.search;   // => "?search=test"
 		parser.hash;     // => "#hash"
 		parser.host;     // => "example.com:3000"
-     renderStatus(parser.hostname);
+
+		host_name = parser.hostname;
+     renderStatus(host_name);
   });
-  function showDiv(){
-  	document.getElementById('welcomeDiv'.style.display= "block");
-  }
-}  //Load data
+
+  //Load data
 	// Call to function with anonymous callback
 	loadJSON(function(response) {
-		
 		// Do Something with the response e.g.
 		jsonresponse = JSON.parse(response);
 
 		// Assuming json data is wrapped in square brackets as Drew suggests
-		/*//Loop through the entire json (test)
+		//Loop through the entire json (test)
 		for(i = 0; i<31; ++i){
-			alert(jsonresponse[i].data.content)
-		}*/
+			//Check if we are on a news site
+			if(host_name == jsonresponse[i].url_){
+				renderStatus("You are on " + jsonresponse[i].content);
+			}
+		}
 
 	});
 });
