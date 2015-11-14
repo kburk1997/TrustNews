@@ -72,11 +72,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		parser.host;     // => "example.com:3000"
      renderStatus(parser.hostname);
   });
-
-  //Load data
+  function showDiv(){
+  	document.getElementById('welcomeDiv'.style.display= "block");
+  }
+}  //Load data
 	// Call to function with anonymous callback
 	loadJSON(function(response) {
-		alert("hello world");
+		
 		// Do Something with the response e.g.
 		jsonresponse = JSON.parse(response);
 
