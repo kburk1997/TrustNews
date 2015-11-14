@@ -77,10 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
      renderStatus(host_name);
   });
   
-  function showText(show)
-{
-    document.getElementById(show).className = "show";
-});
 
   //Load data
 	// Call to function with anonymous callback
