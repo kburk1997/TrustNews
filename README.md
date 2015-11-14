@@ -12,7 +12,7 @@ Ask the following questions:
 * How often are its basic facts in agreement with similar coverage elsewhere?
 
 ##Where do you get data for determining whether a news source is trustworthy or not?
-We crowdsourced this data using CrowdFlower. Respondents were asked to evaluate a small, randomized section of a database of over 60 major news outlets on whethere or not they were trustworthy using the criteria.
+We crowdsourced this data using CrowdFlower. Respondents were asked to evaluate a small, randomized section of a database of over 60 major news outlets on whether or not they were trustworthy using the criteria.
 
 ##What about satire news sources?
 This extension displays whether or not a news source is a satire news source so that the user does not confuse satire with news.
