@@ -17,3 +17,8 @@ We crowdsourced this data using CrowdFlower. Respondents were asked to evaluate 
 ##What about satire news sources?
 This extension displays whether or not a news source is a satire news source so that the user does not confuse satire with news.
 
+##How do I use this extension?
+* First, enable this extension under "Extensions".
+* Then, go to any news site and click the TrustNews icon.
+* A popup should appear determining if the extension could determine what news site you were on, if it is a satire site, and the reliability of this site.
+* To see an explanation, click the "Why?" button? (currently being implemented).
