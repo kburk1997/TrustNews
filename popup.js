@@ -81,6 +81,7 @@ function showMore(){
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
 
+
 	var host_name;
 	//get url of current tab
   getCurrentTabUrl(function(url) {
@@ -126,6 +127,22 @@ document.addEventListener('DOMContentLoaded', function() {
 				else{
 					renderReliability(jsonresponse[i].content+" has a reliability rating of: ");
 					renderRating(jsonresponse[i].reliability + " out of 10" );
+
+					//Change background color based on value
+					if(jsonresponse[i].reliability < 3)
+						document.body.style.backgroundColor = "#FF8080";
+					else if(jsonresponse[i].reliability < 5)
+						document.body.style.backgroundColor = "#FFC080";
+					else if(jsonresponse[i].reliability < 6)
+						document.body.style.backgroundColor = "#FFD480";
+					else if(jsonresponse[i].reliability < 7)
+						document.body.style.backgroundColor = "#FFE580";
+					else if(jsonresponse[i].reliability < 8)
+						document.body.style.backgroundColor = "#DFFF80";
+					else if(jsonresponse[i].reliability < 9)
+						document.body.style.backgroundColor = "#9FFF80";
+					else
+						document.body.style.backgroundColor = "#80FFCC";
 				}
 
 				explanationText = jsonresponse[i].explanation;
