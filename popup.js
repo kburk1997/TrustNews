@@ -50,6 +50,10 @@ function getCurrentTabUrl(callback) {
     callback(url);
   });
 }
+
+//This is a very bad thing and I probably shouldn't do it
+var explanationText = ""; 
+
 //RenderStatus
 //Changes the status of the popup
 function renderStatus(statusText) {
@@ -66,20 +70,13 @@ function renderReliability(statusText) {
 function renderRating(statusText) {
  document.getElementById('rating').textContent = statusText;
 }
-var status = "less";
-function toggleText()
-{
-    var text="Here is some text that I want added to the HTML file";
 
-    if (status == "less") {
-        document.getElementById("textArea").innerHTML=text;
-        document.getElementById("toggleButton").innerText = "See Less";
-        status = "more";
-    } else if (status == "more") {
-        document.getElementById("textArea").innerHTML = "";
-        document.getElementById("toggleButton").innerText = "See More";
-        status = "less"
-    }
+function renderExplanation(statusText) {
+ document.getElementById('explanation').textContent = statusText;
+}
+
+function showMore(){
+	renderExplanation(explanationText);
 }
 //Main function
 document.addEventListener('DOMContentLoaded', function() {
@@ -102,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		host_name = parser.hostname;
      //renderStatus(host_name);
   });
-  
 
   //Load data
 	// Call to function with anonymous callback
@@ -131,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					renderReliability(jsonresponse[i].content+" has a reliability rating of: ");
 					renderRating(jsonresponse[i].reliability + " out of 10" );
 				}
+
+				explanationText = jsonresponse[i].explanation;
 			}
 		}
 
