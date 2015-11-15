@@ -9,7 +9,7 @@
 {"content": "BuzzFeed", "url_": "www.buzzfeed.com", "satire":false, "reliability": 7,
 "explanation":"BuzzFeed is relatively new and has a reputation for being 'clickbaity'."},
 {"content": "ABC", "url_": "abcnews.go.com", "satire":false, "reliability": 7,
-"explanation":"ABC is owned by Disney, so Disney controls what may be broadcasted there."},
+"explanation":"ABC is owned by Disney, so it may be subject to corporate bias."},
 {"content": "Huffington Post", "url_": "www.huffingtonpost.com", "satire":false, "reliability": 7,
 "explanation":"The Huffington Post was launched in 2005 as a left-wing commentary outlet, so some articles may reflect this bias."},
 {"content": "Slate", "url_": "www.slate.com", "satire":false, "reliability": 7,
