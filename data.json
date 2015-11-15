@@ -114,8 +114,8 @@
 "explanation":"Vaccination Council's claims have constantly been refuted by modern science."},
 {"content": "Baltimore Sun", "url_": "www.baltimoresun.com", "satire":false, "reliability": 7,
 "explanation":"Most popular news source in Maryland- covers local and regional since 1837."},
-{"content": "PBS", "url_": "www.pbs.org", "satire":false, "reliability": 7,
-"explanation":""},
+{"content": "PBS", "url_": "www.pbs.org", "satire":false, "reliability": 9,
+"explanation":"According to national studies, PBS is America's #1 trusted news source- keep a sharp mind, though."},
 {"content": "The Economist", "url_": "www.economist.com", "satire":false, "reliability": 7,
 "explanation":"Biased with free-market and free trade, as well as being Anglo-Centric."},
 {"content": "Quartz", "url_": "qz.com", "satire":false, "reliability": 7,
@@ -133,5 +133,5 @@
 {"content": "Express", "url_": "www.express.co.uk", "satire":false, "reliability": 7,
 "explanation":"Regional and local news source for the UK; past reports of 'dodgy weather reporting'."},
 {"content": "Kathimerini", "url_": "www.ekathimerini.com", "satire":false, "reliability": 7,
-"explanation":""}
+"explanation":"23rd most visited news site in Greece. Subject to corporate bias."}
 ]
