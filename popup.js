@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 
 				explanationText = jsonresponse[i].explanation;
+				renderExplanation(explanationText);
 			}
 		}
 
