@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					if(jsonresponse[i].reliability < 3)
 						document.body.style.backgroundImage = "url('spiral-pink.png')";
 					else if(jsonresponse[i].reliability < 5)
-						document.body.style.backgroundImage = "url('spiral-orange-ff080')";
+						document.body.style.backgroundImage = "url('spiral-orange-ff080.ong')";
 					else if(jsonresponse[i].reliability < 6)
 						document.body.style.backgroundImage = "url('spiral-yellow-ffe580.png')";
 					else if(jsonresponse[i].reliability < 7)
