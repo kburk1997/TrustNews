@@ -24,8 +24,5 @@ In order to combat this bias, we crowdsourced this data using CrowdFlower. Respo
 
 During our crowdsourcing process, we had a few "test" questions thrown in (e.g. "Is 'The Onion' satire?", "Is Fox News reliable?") to prevent trolling or spamming.
 
-##What about satire news sources?
-This extension displays whether or not a news source is a satire news source so that the user does not confuse satire with news.
-
 ##Where can I download this extension?
 This extension will soon be available on the Chrome Web Store.
