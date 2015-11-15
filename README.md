@@ -10,9 +10,14 @@ We ask the following questions:
 * What are the backgrounds of its writers and editors?
 * How much original reporting is this site doing?
 * How often are its basic facts in agreement with similar coverage elsewhere?
+* Does this news source contain any political or corporate bias?
 
 ##Where do you get data for determining whether a news source is trustworthy or not?
-We crowdsourced this data using CrowdFlower. Respondents were asked to evaluate a small, randomized section of a database of over 60 major news outlets on whether or not they were trustworthy using the criteria.
+We based some of the trustworthiness off of personal opinion, however we discovered that our opinions would be biased.
+
+In order to combat this bias, we crowdsourced this data using CrowdFlower. Respondents were asked to evaluate a small, randomized section of a database of over 60 major news outlets on whether or not they were trustworthy using the criteria.
+
+During our crowdsourcing process, we had a few "test" questions thrown in (e.g. "Is 'The Onion' satire?", "Is Fox News reliable?") to prevent trolling or spamming.
 
 ##What about satire news sources?
 This extension displays whether or not a news source is a satire news source so that the user does not confuse satire with news.
@@ -20,5 +25,7 @@ This extension displays whether or not a news source is a satire news source so 
 ##How do I use this extension?
 * First, enable this extension under "Extensions".
 * Then, go to any news site and click the TrustNews icon.
-* A popup should appear determining if the extension could determine what news site you were on, if it is a satire site, and the reliability of this site.
-* To see an explanation, click the "Why?" button? (currently being implemented).
+* A popup should appear determining if the extension could determine what news site you were on, if it is a satire site, and the reliability of this site with an explanation.
+
+##Where can I download this extension?
+This extension will soon be available on the Chrome Web Store.
