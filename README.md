@@ -25,4 +25,4 @@ In order to combat this bias, we crowdsourced this data using CrowdFlower. Respo
 During our crowdsourcing process, we had a few "test" questions thrown in (e.g. "Is 'The Onion' satire?", "Is Fox News reliable?") to prevent trolling or spamming.
 
 ##Where can I download this extension?
-This extension will soon be available on the Chrome Web Store.
+You can find this extension [here](https://chrome.google.com/webstore/detail/trustnews/idpllpndgppbccmacnhfbefikkoijbej?authuser=1) on the Chrome Web Store.
