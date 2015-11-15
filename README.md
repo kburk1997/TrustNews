@@ -1,6 +1,6 @@
 # TrustNews
 A Chrome extension that determines if a news source is trustworthy.
-Created at HackRPI 2015 by: Kathleen Burkhardt and Alex Lin
+Created at HackRPI 2015 by Kathleen Burkhardt and Alex Lin.
 
 ##How do I use this extension?
 * First, enable this extension under "Extensions".
