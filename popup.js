@@ -104,6 +104,12 @@ document.addEventListener('DOMContentLoaded', function() {
   //Load data
 	// Call to function with anonymous callback
 	loadJSON(function(response) {
+		document.body.style.backgroundImage = "url('new-spiral-grey.png')";
+		document.body.style.backgroundRepeat = "no-repeat";
+		document.body.style.backgroundPosition = "top left";
+		document.body.style.backgroundSize = "90px 150px";
+
+
 		// Do Something with the response e.g.
 		jsonresponse = JSON.parse(response);
 
@@ -114,6 +120,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		//Loop through the entire json (test)
 		for(i = 0; i<69; ++i){
+
+
 			//Check if we are on a news site
 			if(host_name == jsonresponse[i].url_){
 				renderStatus("You are on " + jsonresponse[i].content);
@@ -130,19 +138,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 					//Change background color based on value
 					if(jsonresponse[i].reliability < 3)
-						document.body.style.backgroundColor = "#FF8080";
+						document.body.style.backgroundImage = "url('spiral-pink.png')";
 					else if(jsonresponse[i].reliability < 5)
-						document.body.style.backgroundColor = "#FFC080";
+						document.body.style.backgroundImage = "url('spiral-orange-ff080')";
 					else if(jsonresponse[i].reliability < 6)
-						document.body.style.backgroundColor = "#FFD480";
+						document.body.style.backgroundImage = "url('spiral-yellow-ffe580.png')";
 					else if(jsonresponse[i].reliability < 7)
-						document.body.style.backgroundColor = "#FFE580";
+						document.body.style.backgroundImage = "url('spiral-limegreen-dfff80.png')";
 					else if(jsonresponse[i].reliability < 8)
-						document.body.style.backgroundColor = "#DFFF80";
+						document.body.style.backgroundImage = "url('spiral-lightgreen-9fff80.png')";
 					else if(jsonresponse[i].reliability < 9)
-						document.body.style.backgroundColor = "#9FFF80";
+						document.body.style.backgroundImage = "url('spiral-teal-80ffcc.png')";
 					else
-						document.body.style.backgroundColor = "#80FFCC";
+						document.body.style.backgroundImage = "url('spiral-blue.png')";
 				}
 
 				explanationText = jsonresponse[i].explanation;
@@ -150,10 +158,10 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		}
 
-		//Check if match still not found
+		/*//Check if match still not found
 		if(!matchFound){
 			renderStatus("We cannot determine if you are on a news site");
-		}
+		}*/
 
 	});
 });
