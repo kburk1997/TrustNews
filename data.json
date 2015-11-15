@@ -127,11 +127,11 @@
 {"content": "Reuters", "url_": "www.reuters.com", "satire":false, "reliability": 7,
 "explanation":"Mainstream media source- subject to corporate pressures and bias. Proceed with caution."},
 {"content": "Platts", "url_": "www.platts.com", "satire":false, "reliability": 7,
-"explanation":""},
+"explanation":"Scientific/financial news source owned by McGraw Hill- subject to corporate bias."},
 {"content": "Otago Daily Times", "url_": "www.odt.co.nz", "satire":false, "reliability": 7,
-"explanation":""},
+"explanation":"Mainstream media for New Zealand- subject to corporate bias and pressures."},
 {"content": "Express", "url_": "www.express.co.uk", "satire":false, "reliability": 7,
-"explanation":""},
+"explanation":"Regional and local news source for the UK; past reports of 'dodgy weather reporting'."},
 {"content": "Kathimerini", "url_": "www.ekathimerini.com", "satire":false, "reliability": 7,
 "explanation":""}
 ]
