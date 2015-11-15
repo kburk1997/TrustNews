@@ -2,6 +2,11 @@
 A Chrome Extension that determines if a news source is trustworthy.
 Created at HackRPI 2015 by: Kathleen Burkhardt and Alex Lin
 
+##How do I use this extension?
+* First, enable this extension under "Extensions".
+* Then, go to any news site and click the TrustNews icon.
+* A popup should appear determining if the extension could determine what news site you were on, if it is a satire site, and the reliability of this site with an explanation.
+
 ## How do we determine if a news source is trustworthy?
 We ask the following questions:
 * How long has it existed?
@@ -21,11 +26,6 @@ During our crowdsourcing process, we had a few "test" questions thrown in (e.g. 
 
 ##What about satire news sources?
 This extension displays whether or not a news source is a satire news source so that the user does not confuse satire with news.
-
-##How do I use this extension?
-* First, enable this extension under "Extensions".
-* Then, go to any news site and click the TrustNews icon.
-* A popup should appear determining if the extension could determine what news site you were on, if it is a satire site, and the reliability of this site with an explanation.
 
 ##Where can I download this extension?
 This extension will soon be available on the Chrome Web Store.
