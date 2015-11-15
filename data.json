@@ -119,7 +119,7 @@
 {"content": "The Economist", "url_": "www.economist.com", "satire":false, "reliability": 7,
 "explanation":"Biased with free-market and free trade, as well as being Anglo-Centric."},
 {"content": "Quartz", "url_": "qz.com", "satire":false, "reliability": 7,
-"explanation":""},
+"explanation":"Launched in 2012; targeted towards the elite businessmen. Focus on international markets."},
 {"content": "Yahoo News", "url_": "news.yahoo.com", "satire":false, "reliability": 7,
 "explanation":"Though it delivers news stories quickly, it has a reputation for not providing the whole story- thus misinformation."},
 {"content": "Tengrinews", "url_": "en.tengrinews.kz", "satire":false, "reliability": 7,
